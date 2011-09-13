@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D1271E4-4117-4194-9585-8BD14C9A9B10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Projeto_Integrado</RootNamespace>
+    <AssemblyName>Projeto Integrado</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBclass.cs" />
+    <Compile Include="clsConsulta.cs" />
+    <Compile Include="clsExame.cs" />
+    <Compile Include="clsMedico.cs" />
+    <Compile Include="clsPaciente.cs" />
+    <Compile Include="clsTecnico.cs" />
+    <Compile Include="FormAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgenda.Designer.cs">
+      <DependentUpon>FormAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgendaExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgendaExame.Designer.cs">
+      <DependentUpon>FormAgendaExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarSenha.Designer.cs">
+      <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfiguracoes.Designer.cs">
+      <DependentUpon>FormConfiguracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContasPagar.designer.cs">
+      <DependentUpon>FormContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContasReceber.designer.cs">
+      <DependentUpon>FormContasReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExclusaoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExclusaoConsulta.Designer.cs">
+      <DependentUpon>FormExclusaoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformacao.Designer.cs">
+      <DependentUpon>FormInformacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarcacaoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarcacaoConsulta.Designer.cs">
+      <DependentUpon>FormMarcacaoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarcacaoExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarcacaoExame.Designer.cs">
+      <DependentUpon>FormMarcacaoExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedico.Designer.cs">
+      <DependentUpon>FormMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaciente.Designer.cs">
+      <DependentUpon>FormPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExclusaoExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExclusaoExame.Designer.cs">
+      <DependentUpon>FormExclusaoExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesqMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesqMedico.Designer.cs">
+      <DependentUpon>FormPesqMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesqPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesqPaciente.Designer.cs">
+      <DependentUpon>FormPesqPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesqTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesqTecnico.Designer.cs">
+      <DependentUpon>FormPesqTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTecnico.Designer.cs">
+      <DependentUpon>FormTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSplash.Designer.cs">
+      <DependentUpon>FormSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgenda.resx">
+      <DependentUpon>FormAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgendaExame.resx">
+      <DependentUpon>FormAgendaExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarSenha.resx">
+      <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguracoes.resx">
+      <DependentUpon>FormConfiguracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContasPagar.resx">
+      <DependentUpon>FormContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContasReceber.resx">
+      <DependentUpon>FormContasReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExclusaoConsulta.resx">
+      <DependentUpon>FormExclusaoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExclusaoExame.resx">
+      <DependentUpon>FormExclusaoExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformacao.resx">
+      <DependentUpon>FormInformacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarcacaoConsulta.resx">
+      <DependentUpon>FormMarcacaoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarcacaoExame.resx">
+      <DependentUpon>FormMarcacaoExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedico.resx">
+      <DependentUpon>FormMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaciente.resx">
+      <DependentUpon>FormPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesqMedico.resx">
+      <DependentUpon>FormPesqMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesqPaciente.resx">
+      <DependentUpon>FormPesqPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesqTecnico.resx">
+      <DependentUpon>FormPesqTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTecnico.resx">
+      <DependentUpon>FormTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSplash.resx">
+      <DependentUpon>FormSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
